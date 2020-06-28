@@ -3,7 +3,7 @@
 	<info>
 		<name>Languages</name>
 		<update version="0.0.1">
-			<file name="languages.xml" url="https://raw.githubusercontent.com/callieopes/Heroes-of-Hyrule/master/languages.xml" />
+			<file name="languages.xml" url="https://raw.githubusercontent.com/callieopes/aurora-elements/master/heroes-of-hyrule/languages.xml" />
 		</update>
 	</info>
 
