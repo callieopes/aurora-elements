@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/callieopes/Heroes-of-Hyrule/master/languages.xml" />
+		</update>
+	</info>
+
+	<!-- standard -->
+	<element name="Hylian="Language" source="Heroes of Hyrule" id="ID_LANGUAGE_HYLIAN">
+		<supports>Standard</supports>
+		<description>
+			<p>Broadly spoken across Hyrule.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Hylians</set>
+			<set name="script">Hylian</set>
+		</setters>
+	</element>
+	<element name="Goron" type="Language" source="Heroes of Hyrule" id="ID_LANGUAGE_GORON">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Goron.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Goron</set>
+			<set name="script">Goron</set>
+		</setters>
+	</element>
+	<element name="Zora" type="Language" source="Heroes of Hyrule" id="ID_LANGUAGE_ZORA">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Zora.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Zora</set>
+			<set name="script">Zora</set>
+		</setters>
+	</element>
+	<element name="Gerudo" type="Language" source="Heroes of Hyrule" id="ID_LANGUAGE_GERUDO">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Gerudo.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Gerudo</set>
+			<set name="script">Gerudo</set>
+		</setters>
+	</element>
+	<element name="Rito" type="Language" source="Heroes of Hyrule" id="ID_LANGUAGE_RITO">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Rito.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Rito</set>
+			<set name="script">Rito</set>
+		</setters>
+	</element>
+	<element name="Sheikah" type="Language" source="Heroes of Hyrule" id="ID_LANGUAGE_SHEIKAH">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by Sheikah.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Sheikah</set>
+			<set name="script">Sheikah</set>
+		</setters>
+	</element>
+  
+  
+  <!-- secret -->
+	<element name="Korok" type="Language" source="Heroes of Hyrule" id="ID_LANGUAGE_KOROK">
+		<supports>Secret</supports>
+		<description>
+			<p>Typically spoken by korok.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Korok</set>
+			<set name="script">Korok</set>
+		</setters>
+	</element>
+  
+  
+  <!-- ancient -->
+	<element name="Ancient Sheikah" type="Language" source="Heroes of Hyrule" id="ID_LANGUAGE_ANCIENTSHIEKAH">
+		<supports>Ancient</supports>
+		<description>
+			<p>No longer spoken, only found in writing.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Sheikah</set>
+			<set name="script">Ancient Sheikah</set>
+		</setters>
+	</element>
+</elements>
