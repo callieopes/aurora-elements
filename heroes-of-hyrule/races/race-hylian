@@ -1,0 +1,149 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+<info>
+<name>Hylian</name>
+<description></description>
+<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Wizards of the Coast</author>
+<update version="0.2.7">
+<file name="race-hylian.xml" url="https://raw.githubusercontent.com/callieopes/Heroes-of-Hyrule/master/race-hylian.xml" />
+</update>
+</info>
+
+<element name="Hylian" type="Race" source="Heroes of Hyrule" id="ID_RACE_HYLIAN">
+<description>
+<p class="flavor"The Hylians, also known as the Hylia people (or simply the Hylia) are a recurring race in the Legend of Zelda series. They are humanoid creatures that worship the goddess Hylia, from which their name derives and by whom they were created. The Hylians are the original race of Hyrule. 
+
+<h4>Hylian TRAITS</h4>
+<p>It’s hard to make generalizations about Hylians, but your Hylian character has these traits.</p>
+<p>
+<span class="feature">Ability Score Increase.</span>Your ability scores each increase by 1.<br />
+<span class="feature">Age.</span>Hylians reach adulthood in their late teens and live less than a century.<br />
+<span class="feature">Alignment.</span>Hylians tend toward no particular alignment. The best and the worst are found among them.<br />
+<span class="feature">Size.</span>Hylians vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.<br />
+<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
+<span class="feature">Languages.</span>You can speak, read, and write Hylian and one extra language of your choice. Hylian typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.<br />
+</p>
+<div element="ID_RACE_VARIANT_HYLIAN_VARIANT"/>
+</description>
+<sheet display="false" />
+<setters>
+<set name="names" type="male">Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth</set>
+<set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra</set>
+<set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver</set>
+<set name="names-format">{{name}} {{surname}}</set>
+<set name="height" modifier="2d10">4'8"</set>
+<set name="weight" modifier="2d4">110 lb.</set>
+</setters>
+<rules>
+<stat name="strength" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" />
+<stat name="dexterity" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" />
+<stat name="constitution" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" />
+<stat name="intelligence" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" />
+<stat name="wisdom" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" />
+<stat name="charisma" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" /> 
+<grant type="Size" id="ID_SIZE_MEDIUM"/>
+<stat name="innate speed" value="30" bonus="base"/>
+<grant type="Language" id="ID_LANGUAGE_HYLIAN"/> 
+<select type="Language" name="Language (Hylian)" supports="Standard||Exotic" requirements="!ID_UA_PS_GRANTS_HYLIAN_VARIANT,!ID_WOTC_ERLW_DRAGONMARK_MARK_OF_FINDING"/>
+<select type="Race Variant" name="Hylian Variant" supports="Hylian" optional="true" />
+</rules>
+</element>
+
+<element name="Hylian Variant" type="Race Variant" source="Heroes of Hyrule" id="ID_RACE_VARIANT_HYLIAN_VARIANT">
+<supports>Hylian</supports>
+<requirements>ID_INTERNAL_OPTION_ALLOW_FEATS</requirements>
+<description>
+<p>If your campaign uses the optional feat rules from the Player’s Handbook, your Dungeon Master might allow these variant traits, all of which replace the Hylian’s Ability Score Increase trait.</p>
+<p>
+<span class="feature">Ability Score Increase.</span>Two different ability scores of your choice increase by 1.<br />
+<span class="feature">Skills.</span>You gain proficiency in one skill of your choice.<br />
+<span class="feature">Feat.</span>You gain one feat of your choice.<br />
+</p>
+</description>
+<sheet alt="Hylian" display="false"/>
+<rules>
+<select type="Racial Trait" name="Ability Score Increase (Hylian Variant)" supports="Hylian Variant" number="2" />
+<select type="Proficiency" name="Skill Proficiency (Hylian Variant)" supports="Skill" />
+<select type="Feat" name="Feat (Hylian Variant)" />
+</rules>
+</element>
+
+<!--temp fix, todo: undo in next release -->
+<element name="Req Temp Fix" type="Grants" source="Internal" id="ID_INTERNAL_GRANTS_REQTEMPFIX" />
+<append id="ID_RACE_VARIANT_HYLIAN_VARIANT">
+<rules>
+<grant type="Grants" id="ID_INTERNAL_GRANTS_REQTEMPFIX"/>
+</rules>
+</append>
+<!--/temp-fix-->
+
+
+<!--Hylian Variant Ability Score Increase-->
+<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Heroes of Hyrule" id="ID_RACE_VARIANT_HYLIAN_VARIANT_STRENGTH">
+<compendium display="false" />
+<supports>Hylian Variant</supports>
+<description>
+<p>Your Strength score increases by 1.</p>
+</description>
+<sheet display="false" />
+<rules>
+<stat name="strength" value="1" alt="Hylian Variant" />
+</rules>
+</element>
+<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Heroes of Hyrule" id="ID_RACE_VARIANT_HYLIAN_VARIANT_DEXTERITY">
+<compendium display="false" />
+<supports>Hylian Variant</supports>
+<description>
+<p>Your Dexterity score increases by 1.</p>
+</description>
+<sheet display="false" />
+<rules>
+<stat name="dexterity" value="1" alt="Hylian Variant" />
+</rules>
+</element>
+<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Heroes of Hyrule" id="ID_RACE_VARIANT_HYLIAN_VARIANT_CONSTITUTION">
+<compendium display="false" />
+<supports>Hylian Variant</supports>
+<description>
+<p>Your Constitution score increases by 1.</p>
+</description>
+<sheet display="false" />
+<rules>
+<stat name="constitution" value="1" alt="Hylian Variant" />
+</rules>
+</element>
+<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Heroes of Hyrule" id="ID_RACE_VARIANT_HYLIAN_VARIANT_INTELLIGENCE">
+<compendium display="false" />
+<supports>Hylian Variant</supports>
+<description>
+<p>Your Intelligence score increases by 1.</p>
+</description>
+<sheet display="false" />
+<rules>
+<stat name="intelligence" value="1" alt="Hylian Variant" />
+</rules>
+</element>
+<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Heroes of Hyrule" id="ID_RACE_VARIANT_HYLIAN_VARIANT_WISDOM">
+<compendium display="false" />
+<supports>Hylian Variant</supports>
+<description>
+<p>Your Wisdom score increases by 1.</p>
+</description>
+<sheet display="false" />
+<rules>
+<stat name="wisdom" value="1" alt="Hylian Variant" />
+</rules>
+</element>
+<element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Heroes of Hyrule" id="ID_RACE_VARIANT_HYLIAN_VARIANT_CHARISMA">
+<compendium display="false" />
+<supports>Hylain Variant</supports>
+<description>
+<p>Your Charisma score increases by 1.</p>
+</description>
+<sheet display="false" />
+<rules>
+<stat name="charisma" value="1" alt="Hylian Variant" />
+</rules>
+</element>
+</elements>
