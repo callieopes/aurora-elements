@@ -97,8 +97,20 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Language" id="ID_LANGUAGE_COMMON"/>	  
-      <select type="Language" name="Language (Hylian)" supports="Standard||Exotic"/>
+      <select type="Language" name="Language (Hylian)" supports="Standard||Exotic"/>	  
+      <grant type="Racial Trait" id="ID_HOH_RACIAL_TRAIT_HYLIAN_ADAPTABLE" />
       <select type="Race Variant" name="Hylian Variant" supports="Hylian" optional="true" />
+    </rules>
+  </element>
+
+  <element name="Adaptable" type="Racial Trait" source="Heroes of Hyrule" id="ID_HOH_RACIAL_TRAIT_HYLIAN_ADAPTABLE">
+    <description>
+      <p>You have proficiency in the Performance and Persuasion skills, and you have proficiency with one musical instrument of your choice.</p>
+    <sheet display="false" />
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+      <select type="Proficiency" name="Musical Instrument Proficiency, Reveler" supports="Musical Instrument" />
     </rules>
   </element>
   
@@ -113,7 +125,7 @@
         <span class="feature">Feat.</span>You gain one feat of your choice.<br />
       </p>
     </description>
-    <sheet alt="Hylian" display="false"/>
+    <sheet alt="Hylian" display="false" />
     <rules>
       <select type="Racial Trait" name="Ability Score Increase (Hylian Variant)" supports="Hylian Variant" number="2" />
       <select type="Proficiency" name="Skill Proficiency (Hylian Variant)" supports="Skill" />
