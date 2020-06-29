@@ -74,7 +74,7 @@
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Proficiency" name="Tool Proficiency, Adaptable" supports="Tools />
+      <select type="Proficiency" name="Tool Proficiency, Adaptable" supports="Tools" />
     </rules>
   </element>
   
