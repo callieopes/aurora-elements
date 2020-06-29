@@ -50,20 +50,18 @@
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Language" id="ID_LANGUAGE_Hylian"/>	  
       <select type="Language" name="Language (Hylian)" supports="Standard||Exotic" /> 
-      <grant type="Racial Trait" id="ID_HOH_RACIAL_TRAIT_HYLIAN_ADAPTABILITY" /> 
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_HYLIAN_ADAPTABILITY" /> 
       <select type="Race Variant" name="Hylian Variant" supports="Hylian" optional="true" />
     </rules>
   </element>
   
-  	<element name="Adaptability" type="Racial Trait" source="Heroes of Hyrule" id="ID_HOH_RACIAL_TRAIT_HYLIAN_ADAPTABILITY">
+	<element name="Tool Proficiency" type="Racial Trait" source="Heroes of Hyrule" id="ID_RACIAL_TRAIT_HYLIAN_ADAPTABILITY">
 		<description>
-			<p>You gain proficiency in any one tool, instrument, mount, or vehicle of your choice.</p>
+			<p>You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools.</p>
 		</description>
-		<sheet>
-			<description>You gain proficiency in any one tool, instrument, mount, or vehicle of your choice.</description>
-		</sheet>
+		<sheet display="false"/>
 		<rules>
-			<select type="Proficiency" name="Weapon Proficiency, Martial Heritage" supports="Martial" />
+			<select type="Proficiency" name="Dwarven Tool Proficiency" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS" />
 		</rules>
 	</element>
 
