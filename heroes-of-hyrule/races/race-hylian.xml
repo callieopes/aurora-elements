@@ -58,7 +58,7 @@
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <stat name="innate speed" value="30" bonus="base"/>
       <grant type="Racial Trait" id="ID_HB_HOH_MOOT_RACIAL_TRAIT_HYLIAN_ADAPTABILITY" />
-      <grant type="Language" id="ID_LANGUAGE_COMMON"/>	  
+      <grant type="Language" id="ID_LANGUAGE_Hylian"/>	  
       <select type="Language" name="Language (Hylian)" supports="Standard||Exotic" requirements="!ID_UA_PS_GRANTS_HYLIAN_VARIANT,!ID_WOTC_ERLW_DRAGONMARK_MARK_OF_FINDING"/>
       <select type="Race Variant" name="Hylian Variant" supports="Hylian" optional="true" />
     </rules>
@@ -72,7 +72,7 @@
 			<description>You gain proficiency in any one tool, instrument, mount, or vehicle of your choice.</description>
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Tool Proficiency, Adaptability" supports="Tools|Musical Instrument|Vehicle" />
+			<select type="Proficiency" name="Tool Proficiency, Adaptability" supports="Tools" />
 		</rules>
 	</element>
   
