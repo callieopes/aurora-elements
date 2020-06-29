@@ -4,7 +4,7 @@
 		<name>Hylian Variant</name>
 		<description>Variant Hylian</description>
 		<update version="0.0.2">
-			<file name="variant-hylian.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/supplements/sword-coast-adventurers-guide/races/variant-half-elf.xml" />
+			<file name="variant-hylian.xml" url="https://raw.githubusercontent.com/callieopes/aurora-elements/master/heroes-of-hyrule/races/variant-hylian.xml" />
 		</update>
 	</info>
 	
