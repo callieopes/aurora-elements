@@ -106,6 +106,7 @@
   <element name="Adaptable" type="Racial Trait" source="Heroes of Hyrule" id="ID_HOH_RACIAL_TRAIT_HYLIAN_ADAPTABLE">
     <description>
       <p>You have proficiency in the Performance and Persuasion skills, and you have proficiency with one musical instrument of your choice.</p>
+    </description>
     <sheet display="false" />
     <rules>
       <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
