@@ -8,7 +8,7 @@
 	</info>
 
 	<!-- standard -->
-	<element name="Hylian="Language" source="Heroes of Hyrule" id="ID_LANGUAGE_HYLIAN">
+	<element name="Hylian type="Language" source="Heroes of Hyrule" id="ID_LANGUAGE_HYLIAN">
 		<supports>Standard</supports>
 		<description>
 			<p>Broadly spoken across Hyrule.</p>
