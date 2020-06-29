@@ -61,7 +61,7 @@
       <stat name="charisma" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT)" />      
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Language" id="ID_LANGUAGE_COMMON"/>	  
+      <grant type="Language" id="ID_LANGUAGE_HYLIAN"/>	  
       <select type="Language" name="Language (Hylian)" supports="Standard||Exotic"/>	  
       <grant type="Racial Trait" id="ID_HOH_RACIAL_TRAIT_HYLIAN_ADAPTABLE" />
       <select type="Race Variant" name="Hylian Variant" supports="Hylian" optional="true" />
