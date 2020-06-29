@@ -49,22 +49,22 @@
       <set name="weight" modifier="2d4">110 lb.</set>
     </setters>
     <rules>
-      <stat name="strength" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" />
-      <stat name="dexterity" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" />
-      <stat name="constitution" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" />
-      <stat name="intelligence" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" />
-      <stat name="wisdom" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" />
-      <stat name="charisma" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED||ID_UA_PS_GRANTS_HYLIAN_VARIANT)" />      
+      <stat name="strength" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT)" />
+      <stat name="dexterity" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT)" />
+      <stat name="constitution" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT)" />
+      <stat name="intelligence" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT)" />
+      <stat name="wisdom" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANT)" />
+      <stat name="charisma" value="1" requirements="!(ID_INTERNAL_GRANTS_REQTEMPFIX||ID_RACE_VARIANT_HYLIAN_VARIANTT)" />      
       <grant type="Size" id="ID_SIZE_MEDIUM"/>
       <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Racial Trait" id="ID_HB_HOH_MOOT_RACIAL_TRAIT_HYLIAN_ADAPTABILITY" />
+      <grant type="Racial Trait" id="ID_HOH_RACIAL_TRAIT_HYLIAN_ADAPTABILITY" />
       <grant type="Language" id="ID_LANGUAGE_Hylian"/>	  
-      <select type="Language" name="Language (Hylian)" supports="Standard||Exotic" requirements="!ID_UA_PS_GRANTS_HYLIAN_VARIANT,!ID_WOTC_ERLW_DRAGONMARK_MARK_OF_FINDING"/>
+      <select type="Language" name="Language (Hylian)" supports="Standard||Exotic" />
       <select type="Race Variant" name="Hylian Variant" supports="Hylian" optional="true" />
     </rules>
   </element>
   
-  	<element name="Adaptability" type="Racial Trait" source="Heroes of Hyrule" id="ID_HB_HOH_MOOT_RACIAL_TRAIT_HYLIAN_ADAPTABILITY">
+  	<element name="Adaptability" type="Racial Trait" source="Heroes of Hyrule" id="ID_HOH_RACIAL_TRAIT_HYLIAN_ADAPTABILITY">
 		<description>
 			<p>You have proficiency with renaissance firearms and any one martial weapon of your choice. You ignore the loading property of muskets and pistols.</p>
 		</description>
