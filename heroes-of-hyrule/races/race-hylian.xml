@@ -72,7 +72,7 @@
 			<description>You gain proficiency in any one tool, instrument, mount, or vehicle of your choice.</description>
 		</sheet>
 		<rules>
-			<select type="Proficiency" name="Tool Proficiency, Adaptability" supports="Tools" />
+			<select type="Proficiency" name="Weapon Proficiency, Martial Heritage" supports="Martial" />
 		</rules>
 	</element>
   
