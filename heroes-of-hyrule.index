@@ -12,6 +12,5 @@
 		<file name="sources.xml" url="https://raw.githubusercontent.com/callieopes/aurora-elements/master/heroes-of-hyrule/sources.xml" />
 		<file name="languages.xml" url="https://raw.githubusercontent.com/callieopes/aurora-elements/master/heroes-of-hyrule/races/race-hylian.xml" />
 		<file name="race-hylian.xml" url="https://raw.githubusercontent.com/callieopes/aurora-elements/master/heroes-of-hyrule/languages.xml" />
-		<file name="variant-hylian.xml" url="https://raw.githubusercontent.com/callieopes/aurora-elements/master/heroes-of-hyrule/races/variant-hylian.xml" />
 	</files>
 </index>
