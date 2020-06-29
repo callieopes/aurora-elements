@@ -74,7 +74,7 @@
     </description>
     <sheet display="false" />
     <rules>
-      <select type="Proficiency" name="Musical Instrument Proficiency, Reveler" supports="Musical Instrument||Artisan Tools" />
+      <select type="Proficiency" name="Tool Proficiency, Adaptable" supports="Musical Instrument|Artisan Tools" />
     </rules>
   </element>
   
