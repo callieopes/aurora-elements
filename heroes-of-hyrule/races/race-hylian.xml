@@ -91,7 +91,7 @@
     </description>
     <sheet alt="Hylian" display="false" />
     <rules>
-      <select type="Racial Trait" name="Ability Score Increase +1 (Hylian Variant)" supports="Hylian Variant" number="1" />
+      <select type="Racial Trait" name="Ability Score Increase +1 (Hylian Variant)" supports="ID_RACE_VARIANT_HUMAN_VARIANT_STRENGTH|ID_RACE_VARIANT_HUMAN_VARIANT_CONSTITUTION|ID_RACE_VARIANT_HUMAN_VARIANT_INTELLIGENCE|ID_RACE_VARIANT_HUMAN_VARIANT_WISDOM|ID_RACE_VARIANT_HUMAN_VARIANT_CHARISMA" />
       <select type="Racial Trait" name="Ability Score Increase +2 (Hylian Variant)" supports="Hylian Variant" number="1" />
       <select type="Proficiency" name="Skill Proficiency (Hylian Variant)" supports="Skill" />
       <select type="Feat" name="Feat (Hylian Variant)" />
@@ -117,7 +117,7 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="strength" value="1" alt="Hylian Variant" />
+      <stat name="strength" value="2" alt="Hylian Variant" />
     </rules>
   </element>
   <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_VARIANT_HYLIAN_VARIANT_DEXTERITY">
@@ -128,7 +128,7 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="dexterity" value="1" alt="Hylian Variant" />
+      <stat name="dexterity" value="2" alt="Hylian Variant" />
     </rules>
   </element>
   <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_VARIANT_HYLIAN_VARIANT_CONSTITUTION">
@@ -139,7 +139,7 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="constitution" value="1" alt="Hylian Variant" />
+      <stat name="constitution" value="2" alt="Hylian Variant" />
     </rules>
   </element>
   <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_VARIANT_HYLIAN_VARIANT_INTELLIGENCE">
@@ -150,7 +150,7 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="intelligence" value="1" alt="Hylian Variant" />
+      <stat name="intelligence" value="2" alt="Hylian Variant" />
     </rules>
   </element>
   <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_VARIANT_HYLIAN_VARIANT_WISDOM">
@@ -161,7 +161,7 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="wisdom" value="1" alt="Hylian Variant" />
+      <stat name="wisdom" value="2" alt="Hylian Variant" />
     </rules>
   </element>
   <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Player’s Handbook" id="ID_RACE_VARIANT_HYLIAN_VARIANT_CHARISMA">
@@ -172,7 +172,7 @@
     </description>
     <sheet display="false" />
     <rules>
-      <stat name="charisma" value="1" alt="Hylian Variant" />
+      <stat name="charisma" value="2" alt="Hylian Variant" />
     </rules>
   </element>
 </elements>
