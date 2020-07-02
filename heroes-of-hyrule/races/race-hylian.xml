@@ -91,7 +91,8 @@
     </description>
     <sheet alt="Hylian" display="false" />
     <rules>
-      <select type="Racial Trait" name="Ability Score Increase (Hylian Variant)" supports="Hylian Variant" number="2" />
+      <select type="Racial Trait" name="Ability Score Increase +1 (Hylian Variant)" supports="Hylian Variant" number="1" />
+      <select type="Racial Trait" name="Ability Score Increase +2 (Hylian Variant)" supports="Hylian Variant" number="1" />
       <select type="Proficiency" name="Skill Proficiency (Hylian Variant)" supports="Skill" />
       <select type="Feat" name="Feat (Hylian Variant)" />
     </rules>
